@@ -1,10 +1,14 @@
 // Business Logic
 
-const celsiusToFaranheit = function(celsius) {
-  result = (celsius * (5 / 9) + 32);
+const celsiusToFarenheit = function(celsius) {
+  return (celsius * 9 / 5 + 32);
 };
 
+const farenheitToCelsius = function(farenheit) {
+  return (farenheit - 32 * 5 / 9);
+};
 // User Interface Logic
 
 const celsius = parseInt(prompt("Enter a temperature in Celsius"));
-alert(result);
+const farenheit = parseInt(prompt("Enter a temperature in Farenheit"));
+alert(farenheitToCelsius (farenheit));
